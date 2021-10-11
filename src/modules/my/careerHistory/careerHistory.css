@@ -1,6 +1,6 @@
 .slds-progress_vertical .slds-progress__item_content {
     margin-top: .25rem;
-    padding-bottom: .25rem;
+    padding-bottom: .75rem;
 }
 
 .slds-progress_vertical .slds-progress__item.slds-is-active:before {
