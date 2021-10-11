@@ -1,29 +1,32 @@
 <template>
-  <div class="background">
-    <div class="slds-grid">
+    <div class="slds-grid background">
         <nav class="slds-col slds-size_1-of-6 slds-nav-vertical" aria-label="Sub page">
             <div class="slds-nav-vertical__section">
               <ul aria-describedby="entity-header">
-                <li class="slds-nav-vertical__item">
-                  <a href="#" class="slds-nav-vertical__action">About Me</a>
+                <li name="menuAboutMe" class="slds-nav-vertical__item">
+                  <a href="#" onclick={clickAboutMe} class="slds-nav-vertical__action">About Me</a>
                 </li>
-                <li class="slds-nav-vertical__item slds-is-active">
-                  <a href="#" class="slds-nav-vertical__action" aria-current="true">Career Journey</a>
+                <li name="menuCareerJourney" class="slds-nav-vertical__item slds-is-active">
+                  <a href="#" onclick={clickCareerJourney} class="slds-nav-vertical__action" aria-current="true">Career Journey</a>
                 </li>
-                <li class="slds-nav-vertical__item">
-                  <a href="#" class="slds-nav-vertical__action">Highlights</a>
+                <li name="menuHighlights" class="slds-nav-vertical__item">
+                  <a href="#" onclick={clickHighlights} class="slds-nav-vertical__action">Highlights</a>
                 </li>
-                <li class="slds-nav-vertical__item">
-                  <a href="#" class="slds-nav-vertical__action">Links</a>
+                <li name="menuLinks" class="slds-nav-vertical__item">
+                  <a href="#" onclick={clickLinks} class="slds-nav-vertical__action">Links</a>
                 </li>
               </ul>
             </div>
             </nav>
             <div class="slds-col slds-size_5-of-6 slds-border_left">
                 <div class="slds-p-around_small  slds-scrollable_y">
+                  <template if:true={showCareerJourney}>
                     <my-career-history></my-career-history>
+                  </template>
+                  <template if:true={showAboutMe}>
+                    <my-about-me></my-about-me>
+                  </template>
                 </div>
             </div>
     </div>
-  </div>
 </template>
