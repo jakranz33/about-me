@@ -2,11 +2,14 @@
     "name": "about-me",
     "version": "0.0.1",
     "author": "jakranz33",
-    "bugs": "https://github.com/jkranz-rk/my-app/issues",
+    "bugs": "https://github.com/jakranz33/about-me/issues",
     "dependencies": {
+        "@lwc/synthetic-shadow": "^2.5.3",
+        "@salesforce-ux/design-system": "^2.16.2",
         "compression": "^1.7.4",
         "express": "^4.17.1",
-        "helmet": "^4.6.0"
+        "helmet": "^4.6.0",
+        "yarn": "^1.22.15"
     },
     "engines": {
         "node": ">=10.13.0",

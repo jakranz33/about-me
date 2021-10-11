@@ -1,4 +1,12 @@
-.center {
+.title-header {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.my-app-body {
+    background-color: #001639;
+}
+
+/* .center {
     text-align: center;
 }
 .link {
@@ -36,3 +44,4 @@ img {
 .greeting {
     height: 75px;
 }
+ */
